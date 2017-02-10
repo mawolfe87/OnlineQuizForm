@@ -1,0 +1,208 @@
+/*
+// Michael Wolfe
+//Chapter 9 Library Form Assignment
+//03.10.2016
+*/
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+/* body */
+body {
+	background:#fafafa;
+	color:#404040;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	background:#efeff5;
+	box-shadow: 0px -4px 8px 8px #fafafa inset;
+	border-bottom:1px solid #999;
+	height:80px;
+	margin:0 auto;
+	width:751px;
+}
+#header h1 {
+	color:#888;
+	font-size:266%;
+	letter-spacing:-3px;
+	text-align:right;
+	padding:5px;
+	margin-bottom:-20px;
+}
+#header h2 {
+	color:#a6a6a6;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:right;
+}
+#header h3 {
+	color:#a6a6a6;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:right;
+}
+
+/* navigation */
+#left {
+	border-right:1px solid #999;
+}
+#center {
+	border-right:1px solid #999;
+}
+#navigation {
+	background:#fafafa;
+	margin:0 auto;
+	width:750px;
+	height:40px;
+	list-style:none;
+}
+#navigation li {
+	float:left;
+	width:249px;
+	list-style:none;
+}
+#navigation a {
+	color:#555;
+	display:block;
+	line-height:40px;
+	text-align:center;
+}
+#navigation a:hover {
+	background:#e3e3e3;
+	color:#555;
+}
+#navigation .active {
+	background:#e3e3e3;
+	color:#777;
+}
+
+/* content */
+#content {
+	height:auto;
+	margin:0 auto;
+	padding:0 0 20px;
+	width:751px;
+}
+#content h1 {
+	border-bottom:1px dashed #999;
+	font-size:1.8em;
+	padding:20px 0 0;
+}
+#content p {
+	padding:20px 20px 0;
+}
+#response {
+	border: 0.01em solid black;
+	padding:10px;
+	background-color:#ffff80;
+}
+#correct_response {
+	border: 0.01em solid black;
+	padding:10px;
+	margin:1px;
+	background-color:#b3ff99;
+}
+#incorrect_response {
+	border: 0.01em solid black;
+	padding:10px;
+	margin:1px;
+	background-color:#ff8080;
+}
+#results {
+	padding:3px;
+	font-size:105%;
+	list-style-position:inside;
+}
+#options {
+	padding:3px;
+	font-size:105%;
+	list-style-position:inside;
+	text-indent:20px;
+}
+
+#correct {
+	padding:1px;
+	list-style-image: url('check_green.png');
+	font-weight: bold;
+	margin-left:50px;
+}
+#wrong{
+	padding:1px;
+	list-style-image: url('red_x.png');
+	font-weight: bold;
+	margin-left:50px;
+}
+#right{
+	padding:1px;
+	list-style-image: url('check_green.png');
+	margin-left:50px;
+}
+#question {
+	font-size:130%;
+	text-decoration:underline;
+	text-align:left;
+}
+#feedback {
+	font-size:90%;
+	font-style:italic;
+}
+#list {
+	padding:1px;
+	margin-left:60px;
+}
+#prompt {
+	text-align:center;
+	font-size:130%;
+}
+#info {
+	text-align:left;
+	font-size:130%;
+}
+
+/* footer */
+#footer {
+	border-top:1px solid #999; 
+	height:50px;
+	margin:0 auto;
+	padding:10px;
+	text-align:center;
+	width:751px;
+}
+
+/* Added by Larry Ullman: */
+.error, .ad {
+	font-weight: bold;
+	color: #C00
+}
+
+.correct{
+	font-weight:bold;
+	color: #00ff00
+}
+.incorrect{
+	font-weight:bold;
+	color: #ff0000
+}
+input, select, .input {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1em;
+	color: #ffcc00;
+	background: #FFFFFF;
+	border:1px dotted #004080;
+}
